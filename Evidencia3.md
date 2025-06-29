@@ -75,7 +75,7 @@ A continuación se presentan cuatro operaciones útiles para consultar la base d
 
     π_ID_Producto (σ_Tipo='Labial' ∧ Subtipo='Tinta' (PRODUCTO))
 
-    **_Explicación_**: Se proyectan solo los ID de productos que son labiales y específicamente del subtipo "Tinta".
+    _Explicación_: Se proyectan solo los ID de productos que son labiales y específicamente del subtipo "Tinta".
 
 - **Operación 2**: Mostrar todos los maquillajes hechos con ingredientes naturales
 
@@ -83,13 +83,13 @@ A continuación se presentan cuatro operaciones útiles para consultar la base d
     (σ_Tipo='Natural'(INGREDIENTE)) ⨝ MAQUILLAJE_INGREDIENTE
     )
 
-    **_Explicación_**: Seleccionamos los ingredientes naturales, los unimos con la tabla que relaciona maquillajes e ingredientes, y proyectamos los IDs de maquillajes que los usan.
+    _Explicación_: Seleccionamos los ingredientes naturales, los unimos con la tabla que relaciona maquillajes e ingredientes, y proyectamos los IDs de maquillajes que los usan.
 
 - **Operación 3**: Obtener reseñas con calificación mayor a 4.0
 
     σ_Calificación > 4.0 (RESEÑA)
 
-    **_Explicación_**: Se filtran solo aquellas reseñas cuya calificación es superior a 4.0.
+    _Explicación_: Se filtran solo aquellas reseñas cuya calificación es superior a 4.0.
 
 - **Operación 4**: Obtener maquillajes fabricados en Corea del Sur con tono "Frío"
 
@@ -97,4 +97,4 @@ A continuación se presentan cuatro operaciones útiles para consultar la base d
     (σ_País='Corea del Sur'(ORIGEN)) ⨝ MAQUILLAJE ⨝ (σ_Tipo='Frío'(TONO))
     )
 
-    **_Explicación_**: Se seleccionan maquillajes cuyo país de origen es Corea del Sur y tienen tono frío, proyectando solo sus identificadores.
+    _Explicación_: Se seleccionan maquillajes cuyo país de origen es Corea del Sur y tienen tono frío, proyectando solo sus identificadores.
