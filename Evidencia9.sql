@@ -25,6 +25,8 @@ END$$
 
 DELIMITER ;
 
+SELECT calcular_pendiente('Reseña', 'ID_Reseña', 'Calificacion');
+
 
 
 -- Correlacion entre 2 conjuntos de datos
@@ -58,3 +60,5 @@ BEGIN
 END$$
 
 DELIMITER ;
+
+SELECT calcular_correlacion('Reseña', 'ID_Reseña', 'Calificacion');
